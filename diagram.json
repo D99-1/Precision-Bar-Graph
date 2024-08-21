@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 155.33, "left": -159.99, "attrs": {} },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": 35.32,
+      "left": -140.67,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.8", "bargraph1:C10", "black", [ "h52", "v-75" ] ],
+    [ "bargraph1:C10", "bargraph1:C9", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C9", "bargraph1:C8", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C8", "bargraph1:C7", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C7", "bargraph1:C6", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C6", "bargraph1:C5", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C5", "bargraph1:C4", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C4", "bargraph1:C3", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C3", "bargraph1:C2", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:C2", "bargraph1:C1", "black", [ "h8", "v0" ] ],
+    [ "bargraph1:A1", "pico:GP2", "green", [ "h-82", "v151" ] ],
+    [ "bargraph1:A2", "pico:GP3", "green", [ "h-90", "v147" ] ],
+    [ "bargraph1:A3", "pico:GP4", "green", [ "h-99", "v149" ] ],
+    [ "bargraph1:A4", "pico:GP5", "green", [ "h-107", "v150" ] ],
+    [ "bargraph1:A5", "pico:GP6", "green", [ "h-115", "v158" ] ],
+    [ "bargraph1:A6", "pico:GP7", "green", [ "h-124", "v168" ] ],
+    [ "bargraph1:A7", "pico:GP8", "green", [ "h-134", "v158" ] ],
+    [ "bargraph1:A8", "pico:GP9", "green", [ "h-144", "v168" ] ],
+    [ "bargraph1:A9", "pico:GP10", "green", [ "h-153", "v168" ] ],
+    [ "bargraph1:A10", "pico:GP11", "green", [ "h-163", "v177" ] ]
+  ]
+}
